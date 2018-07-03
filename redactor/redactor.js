@@ -5661,6 +5661,13 @@
 							}
 						}
 
+						var nodes = this.selection.get();
+						if (nodes) {
+							for (var i = 0; i < nodes.length; i++) {
+								$(nodes[i]).remove();
+							}
+						}
+
 						// clear unverified
 						this.clean.clearUnverified();
 
